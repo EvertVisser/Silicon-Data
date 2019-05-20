@@ -173,7 +173,6 @@ public class Sound extends Application {
 	btPlay = new Button("PLAY TONE");
 	btPlay.setTooltip(new Tooltip("Press this button to play a Tone with the current settings"));
 	btPlay.setOnMousePressed(me -> new Thread(new Tone(262, duration)).start());
-	btPlay.setOnAction(ae -> System.out.println("Play"));
 
 	Button btExit = new Button("EXIT");
 	btExit.setTooltip(new Tooltip("Press this button when you've had enough"));
